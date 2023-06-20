@@ -1,0 +1,349 @@
+id,tags,value
+0,science,1212
+1,technology,1179
+2,TED-Ed,807
+3,culture,798
+4,animation,733
+5,society,695
+6,education,692
+7,TEDx,678
+8,social change,644
+9,global issues,636
+10,design,585
+11,business,580
+12,health,550
+13,history,549
+14,innovation,475
+15,humanity,470
+16,biology,460
+17,communication,424
+18,art,401
+19,future,389
+20,creativity,376
+21,entertainment,373
+22,community,371
+23,activism,349
+24,environment,327
+25,medicine,319
+26,climate change,314
+27,brain,309
+28,personal growth,308
+29,economics,290
+30,health care,290
+31,sustainability,288
+32,collaboration,283
+33,performance,282
+34,nature,282
+35,music,275
+36,psychology,267
+37,TED Fellows,264
+38,politics,255
+39,animals,253
+40,work,246
+41,invention,244
+42,human body,238
+43,identity,237
+44,kids,231
+45,women,231
+46,engineering,216
+47,storytelling,215
+48,government,212
+49,medical research,208
+50,equality,206
+51,public health,197
+52,Internet,193
+53,leadership,193
+54,Africa,192
+55,computers,192
+56,data,190
+57,disease,182
+58,war,176
+59,cities,171
+60,math,169
+61,space,162
+62,United States,153
+63,evolution,152
+64,food,150
+65,ocean,150
+66,writing,144
+67,race,144
+68,physics,141
+69,mental health,140
+70,exploration,139
+71,neuroscience,134
+72,humor,130
+73,gender,129
+74,family,128
+75,architecture,126
+76,self,124
+77,photography,122
+78,religion,120
+79,illness,120
+80,universe,120
+81,language,119
+82,media,115
+83,decision-making,113
+84,AI,113
+85,policy,112
+86,democracy,112
+87,happiness,111
+88,relationships,110
+89,violence,109
+90,energy,108
+91,entrepreneur,108
+92,motivation,107
+93,journalism,106
+94,philosophy,105
+95,film,104
+96,visualizations,104
+97,potential,104
+98,law,102
+99,poetry,101
+100,parenting,101
+101,biodiversity,100
+102,software,99
+103,social media,98
+104,international development,97
+105,literature,95
+106,genetics,94
+107,death,93
+108,books,93
+109,ancient world,92
+110,teaching,92
+111,emotions,91
+112,beauty,91
+113,pollution,91
+114,biotech,87
+115,robots,87
+116,love,87
+117,money,87
+118,poverty,86
+119,Countdown,85
+120,finance,83
+121,water,80
+122,cancer,79
+123,cognitive science,76
+124,DNA,75
+125,astronomy,74
+126,infrastructure,74
+127,success,73
+128,transportation,73
+129,algorithm,71
+130,agriculture,71
+131,ecology,71
+132,india,69
+133,sex,68
+134,sports,67
+135,crime,67
+136,youth,66
+137,insects,66
+138,memory,65
+139,coronavirus,65
+140,product design,64
+141,justice system,63
+142,comedy,63
+143,machine learning,63
+144,compassion,63
+145,empathy,62
+146,demo,62
+147,goals,61
+148,fish,60
+149,aging,59
+150,Planets,59
+151,feminism,58
+152,anthropology,57
+153,investing,57
+154,chemistry,56
+155,code,56
+156,urban planning,55
+157,disability,55
+158,Middle East,52
+159,immigration,52
+160,microbiology,52
+161,conservation,52
+162,virus,51
+163,work-life balance,51
+164,consciousness,50
+165,renewable energy,50
+166,depression,49
+167,electricity,49
+168,pandemic,48
+169,women in business,48
+170,marine biology,48
+171,plants,48
+172,statistics,47
+173,bacteria,47
+174,dance,46
+175,Best of the Web,46
+176,LGBTQIA+,45
+177,TEDMED,44
+178,natural disaster,44
+179,drugs,44
+180,china,44
+181,curiosity,43
+182,gaming,43
+183,farming,43
+184,fear,43
+185,TED en Espa?ol,42
+186,natural resources,42
+187,terrorism,42
+188,refugees,41
+189,prison,41
+190,personality,41
+191,Vaccines,40
+192,Asia,39
+193,ethics,39
+194,corruption,39
+195,marketing,38
+196,philanthropy,38
+197,sociology,38
+198,time,37
+199,online privacy,37
+200,Anthropocene,36
+201,UX design,35
+202,consumerism,35
+203,productivity,35
+204,discovery,35
+205,public space,34
+206,indigenous peoples,34
+207,fashion,34
+208,sight,34
+209,solar system,33
+210,industrial design,33
+211,sleep,33
+212,flight,33
+213,behavioral economics,32
+214,sound,32
+215,TED Prize,32
+216,magic,31
+217,bioethics,31
+218,diversity,30
+219,military,29
+220,trees,29
+221,TED Residency,29
+222,spoken word,28
+223,theater,28
+224,solar energy,28
+225,surveillance,28
+226,illusion,27
+227,Audacious Project,27
+228,weather,27
+229,Europe,27
+230,biosphere,26
+231,capitalism,26
+232,archaeology,25
+233,sexual violence,25
+234,Slavery,25
+235,trust,25
+236,nanotechnology,25
+237,AIDS,25
+238,gardening,24
+239,manufacturing,24
+240,encryption,24
+241,travel,24
+242,Transgender,24
+243,maps,24
+244,drones,23
+245,library,23
+246,virtual reality,23
+247,heart,23
+248,,23
+249,synthetic biology,22
+250,aliens,22
+251,protest,22
+252,inclusion,22
+253,Surgery,22
+254,medical imaging,22
+255,biomimicry,22
+256,Mission Blue,22
+257,painting,21
+258,birds,21
+259,quantum,21
+260,museums,21
+261,South America,21
+262,telescopes,21
+263,Big Bang,21
+264,friendship,20
+265,plastic,20
+266,addiction,20
+267,botany,20
+268,interview,19
+269,Egypt,19
+270,paleontology,19
+271,primates,19
+272,prosthetics,19
+273,dark matter,19
+274,Mars,18
+275,cyber security,18
+276,pregnancy,18
+277,blindness,18
+278,mindfulness,18
+279,TED Books,18
+280,public speaking,17
+281,human rights,17
+282,PTSD,17
+283,vulnerability,17
+284,exercise,17
+285,astrobiology,16
+286,television,16
+287,TED Connects,16
+288,bees,16
+289,geology,16
+290,resources,16
+291,hearing,16
+292,nuclear energy,15
+293,science fiction,15
+294,dinosaurs,15
+295,toys,15
+296,ebola,14
+297,fungi,14
+298,driverless cars,14
+299,Alzheimer's,14
+300,Autism spectrum disorder,14
+301,Antarctica,14
+302,smell,14
+303,shopping,13
+304,body language,13
+305,rivers,13
+306,neurology,13
+307,3D printing,13
+308,Islam,13
+309,Christianity,12
+310,Brazil,12
+311,wind energy,12
+312,coral reefs,12
+313,Moon,12
+314,CRISPR,11
+315,graphic design,11
+316,fossil fuels,11
+317,suicide,11
+318,glaciers,11
+319,rocket science,11
+320,bullying,10
+321,String theory,10
+322,blockchain,10
+323,meditation,9
+324,grammar,9
+325,international relations,9
+326,asteroid,8
+327,augmented reality,8
+328,homelessness,8
+329,Buddhism,8
+330,deextinction,8
+331,Life,7
+332,bionics,7
+333,conducting,7
+334,cryptocurrency,7
+335,typography,7
+336,Sun,7
+337,forensics,6
+338,atheism,5
+339,street art,4
+340,microbes,3
+341,Judaism,3
+342,NASA,2
+343,podcast,2
+344,pain,2
+345,Hinduism,1
+346,TED Membership,1
+347,crowdsourcing,1

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Tags ranking by reference time</title>
+        <script src="/static/echarts.js"></script>
+        <script src="/static/jquery.js"></script>
+    </head>
+    <body>
+        <div id="main_tags" style="width:1100px;height:700px;"></div>
+        <script type="text/javascript">
+            var mychart = echarts.init(document.getElementById('main_tags'));
+            $.getJSON('/static/tags.json').done(function(data){
+                mychart.setOption({
+                    title:{
+                        text:'提及次数 top 10',
+                        left:'center',
+                        textStyle: {//主标题的属性
+                            color: '#C28D21',//颜色
+                            fontSize: 35,//大小
+                            // fontStyle: 'oblique',//斜体
+                            fontWeight: '700',//粗细
+                            fontFamily: 'monospace',//字体
+                            // textBorderColor: "#000",//描边
+                            // textBorderWidth: '2',//描边的宽度
+                            textShadowColor: 'red',//阴影颜色
+                            textShadowBlur: '10',//阴影的宽度
+                            textShadowOffsetX: '-0',//阴影向X偏移
+                            textShadowOffsetY: '-70',//阴影向Y偏移
+                        },
+                    },
+                    tooltip:{},
+                    legend:{
+                        data:['提及次数'],
+                        left:'right',
+                        textStyle:{
+                            fontSize:18
+                        },
+                    },
+                    grid:{
+                        left: '20%',
+                        bottom:'40%',
+                        right:'0%',
+                        top:'10%'
+                    },
+                    xAxis:{
+                        data:data.tags,
+                        axisLabel: { interval: 0, rotate: 30 , color: 'green' ,fontSize:14 },
+
+                    },
+                    yAxis:{
+                        axisLabel:{
+                            color:'green',
+                            fontSize:14
+                        }
+                    },
+                    series:[
+                        {
+                            name:'提及次数',
+                            type:'bar',
+                            barWidth:'50%',
+                            barGap:'60%',
+                            data:data.numbers,
+                            itemStyle: {
+                                normal: {
+                                    //每根柱子颜色设置
+                                    color: function(params) {
+                                        let colorList = [
+                                            "#c23531",
+                                            "#2f4554",
+                                            "#61a0a8",
+                                            "#d48265",
+                                            "#91c7ae",
+                                            "#749f83",
+                                            "#ca8622",
+                                            "#bda29a",
+                                            "#6e7074",
+                                            "#546570",
+                                            "#c4ccd3",
+                                            "#4BABDE",
+                                            "#FFDE76",
+                                            "#E43C59",
+                                            "#37A2DA"
+                                        ];
+                                        return colorList[params.dataIndex];
+                                    }
+                                }
+                            },
+                            label: {
+                                show: "true",
+                                position: "top",
+                                color: "black",
+                                fontWeight: "bolder",
+                                // backgroundColor: "auto",
+                                fontSize: "15"
+                            },
+                        }
+                    ]
+                });
+            });
+            // option &&mychart1.setOption(option);
+
+        </script>
+
+    </body>
+</html>
