@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>电类工程导论 （B类）</title>
+    <link rel="stylesheet" href="/static/front1.css" type="text/css">
+</head>
+<body style="margin: 0px;">
+    <img src="{{url_for('static',filename='images/ted.jpg')}}" width="100%" alt="">
+    <div class="title">
+        <div><h3 class="title1">TED</h3></div>
+        <div><h3 class="title2">ideas worth spreading</h3></div>
+    </div>
+    <div class="icons">
+        <a class="icon1" href="{{ url_for('search')}}"><button class="button"><span>Search</span></button></a>
+        <a class="icon2" href="{{ url_for('rank')}}"><button class="button"><span>Rank</span></button></a>
+        <a class="icon3" href="{{ url_for('more')}}"><button class="button"><span>More</span></button></a>
+    </div>
+    
+</body>
+</html>

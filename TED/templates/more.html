@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>More</title>
+    <link rel="stylesheet" href="/static/more.css" type="text/css">
+</head>
+<body>
+    <img src="{{url_for('static',filename='images/ted.jpg')}}" width="100%" alt="" style="position: fixed; display: flex;left: 0px;top: 0px;z-index: -1;">
+    <div class="headline">
+		<div class="head"><a href="{{ url_for('frontpage')}}"><span>TED</span></a></div>
+		<div class="slogan">Ideas worth spreading</div>
+		<div class="navigator">
+			<a class="icon1" href="{{ url_for('search')}}"><button class="button"><span>Search</span></button></a>
+      <a class="icon2" href="{{ url_for('rank')}}"><button class="button"><span>Rank</span></button></a>
+      <a class="icon3" href="{{ url_for('more')}}"><button class="button"><span>More</span></button></a>
+		</div>
+	</div>
+    <div class="title">
+        <div><h3 class="title1">TED</h3></div>
+        <div><h3 class="title2">for more</h3></div>
+    </div>
+    <div class="icons">
+        <a class="tag1" href="{{ url_for('echarts_tags')}}">
+            <img src="{{url_for('static',filename='images/bar.jpg')}}" width="100%" height="100%">
+            <p>top 10 most popular tags</p>
+        </a>
+        <a class="tag2" href="{{ url_for('echarts_views')}}">
+            <img src="{{url_for('static',filename='images/bar.jpg')}}" width="100%" height="100%">
+            <p>top 10 most-viewed videos</p>
+        </a>
+        <a class="tag3" href="{{ url_for('gephi_tags')}}">
+            <img src="{{url_for('static',filename='images/web.png')}}" width="100%" height="100%">
+            <p>Relation Web</p>
+        </a>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,271 @@
+.headline {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    z-index: 999;
+}
+
+
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+
+
+.head {
+    display: inline;
+    position: relative;
+    font-size: 33px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    letter-spacing: -3px;
+    left: 10px;
+    top: 3px;
+}
+
+.head span {
+    color: red;
+}
+
+.slogan{
+    display: inline;
+    position: absolute;
+    left: 90px;
+    top:13px;
+    font-size: 22px;
+    font-weight: 350;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #9d9d9d;
+}
+
+.navigator {
+    display: inline;
+    position: absolute;
+    top:15px;
+    right: 0;
+    width: 400px;
+    height: 50px;
+}
+
+
+.icon1{
+    position: absolute;
+    right: 300px;
+}
+
+.icon2 {
+    position: absolute;
+    right: 200px;
+}
+
+.icon3 {
+    position: absolute;
+    right: 100px;
+}
+
+.button {
+    display: inline-block;
+    background-color: #fff;
+    border: none;
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    padding: 0px;
+    width: 95px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 0px;
+    vertical-align: middle;
+}
+
+.button span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    left:0;
+    transition: 0.5s;
+    width: 90px;
+    background-color: #fff;
+    border-radius: 5px;
+    color: black;
+    height: 30px;
+    text-align: center;
+}
+
+
+.button:hover span {
+    background-color: red;
+    border-radius: 5px;
+    color: #FFF;
+    height: 30px;
+    text-align: center;
+}
+
+
+
+.next {
+    position: absolute;
+    width: 100%;
+    height: 1000px;
+}
+
+.background {
+    position: fixed;
+    top: 50px;
+}
+
+.content {
+    position: absolute;
+    height: 1000px;
+    left:212px;
+    right: 212px;
+    top:100px;
+}
+
+.col {
+    display: inline-block;
+    width: 250px;
+    height: 320px;
+    background-color: white;
+    padding: 5px;
+    vertical-align: middle;
+    margin:5px;
+}
+
+
+
+.vedio h4 {
+    color: black;
+}
+
+.vedio {
+    cursor: help; 
+    width: 100%;
+    height: 250px;
+    transform:translateZ(0); /* webkit flicker fix */
+    -webkit-font-smoothing: antialiased; /* webkit text rendering fix */
+  }
+  
+  .vedio .tooltip {
+    background: #1d49cade;
+    right: 105%;
+    color: #d2d2d2;
+    display: block;
+    top:-10px;
+    margin-bottom: 0px;
+    opacity: 0;
+    padding: 10px;
+    pointer-events: none;
+    position: absolute;
+    width: 70%;
+    height: auto;
+    transform: translateY(10px);
+    transition: all .25s ease-out;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.28);
+    font-size: x-small;
+  }
+  
+  /* This bridges the gap so you can mouse into the tooltip without it disappearing */
+  .vedio .tooltip:before {
+    bottom: -20px;
+    content: " ";
+    display: block;
+    height: 20px;
+    right: 0px;
+    position: absolute;
+    width: 100%;
+  }  
+  
+  /* CSS Triangles - see Trevor's post */
+  .vedio .tooltip:after {
+    border-bottom: solid transparent 10px;
+    border-top: solid transparent 10px;
+    border-left: solid #1d49cade 10px;
+    right: 3px;
+    content: " ";
+    height: 0;
+    top: 30%;
+    margin-right: -13px;
+    position: absolute;
+    width: 0;
+  }
+    
+  .vedio:hover .tooltip {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0px);
+  }
+  
+  /* IE can just show/hide with no transition */
+  .lte8 .wrapper .tooltip {
+    display: none;
+  }
+  
+  .lte8 .wrapper:hover .tooltip {
+    display: block;
+  }
+
+.pic0 {
+    position: relative;
+    top: 0px;
+    height: 145px;
+}
+
+.postTime {
+    position: relative;
+    top:0px;
+    width: 100%;
+    height: 20px;
+    font-size: small;
+}
+
+.author {
+    position: relative;
+    top:0px;
+    width: 100%;
+    height: 70px;
+}
+
+.pic {
+    display: inline-block;
+    position: relative;
+    left: 5px;
+    top:0px;
+    width: 50px;
+}
+
+.info {
+    display: inline-block;
+    position: absolute;
+    left: 80px;
+}
+
+.para {
+    padding: 0px;
+    border: 0px;
+    margin: 0px;
+    font-size: small;
+}
+
+
+.turnNext {
+    position: relative;
+    top: 0;
+    height: 50px;
+}

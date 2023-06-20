@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>TED</title>
+        <link rel="stylesheet" type="text/css" href="/static/search.css">
+        <style>
+        input[type=text], select {
+            width: 100% ;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+          }
+          
+          input[type=submit] {
+            width: 100%;
+            background-color: #fe5252;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+          }
+          
+          input[type=submit]:hover {
+            background-color: #774088;
+            color:#ccc
+          }
+          
+        </style>
+    </head>
+    <body>
+      <img src="{{url_for('static',filename='images/ted.jpg')}}" width="100%" style="position: fixed; display: flex;left: 0px;top: 0px;z-index: -1;">
+      <div class="headline">
+        <div class="head"><a href="{{ url_for('frontpage')}}"><span>TED</span></a></div>
+        <div class="slogan">Ideas worth spreading</div>
+        <div class="navigator">
+          <a class="icon1" href="{{ url_for('search')}}"><button class="button"><span>Search</span></button></a>
+          <a class="icon2" href="{{ url_for('rank')}}"><button class="button"><span>Rank</span></button></a>
+          <a class="icon3" href="{{ url_for('more')}}"><button class="button"><span>More</span></button></a>
+        </div>
+      </div>
+      <div class="searchFrame">
+        <form class ="keyword" name="input" id="status_search" method="get" action="results" placeholder="Search...">
+            <p class="tag">Title:</p><input class ="keyword"name="title" type="text" id="title"  size="20" placeholder="Search...">
+            <p class="tag">Tag:</p><input class ="keyword" name="tag" type="text" id="tags"  size="20"placeholder="Search...">
+            <p class="tag">Names:</p><input class ="keyword" name="names"type="text" id="speaker_name"  size="20"placeholder="Search...">
+            <p class="tag">Major:</p><input class ="keyword" name="major"type="text" id="speaker_position"  size="20"placeholder="Search...">
+            <p class="tag">Introduction:</p><input class ="keyword"name="introduction" type="text" id="speaker_intro"  size="20"placeholder="Search...">
+            <p class="tag">Details:</p><input class ="keyword" name="details" type="text" id="details"  size="20" placeholder="Search...">
+            <input type="submit" value="Search">
+        </form>
+      </div>
+    </body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>电类工程导论（B类）</title>
+	<link rel="stylesheet" href="/static/result3.css" type="text/css">
+
+	<style>
+		.page {
+		  display: inline-block;
+		  margin: 50px;
+		}
+	
+		.pagelist {
+		  display: inline-block;
+		  height: 40px;
+		  line-height: 40px;
+		}
+	
+		.pagelist span {
+		  font-size: 20px;
+		  color: rgba(51, 51, 51, 1);
+		}
+	
+		.pagelist .jump {
+		  padding: 6px 14px;
+		  text-align: center;
+		  cursor: pointer;
+		  margin-left: 30px;
+		  width: 40px;
+		  height: 40px;
+		  background: rgba(204, 204, 204, 0.3);
+		  border-radius: 6px;
+		}
+	
+		.pagelist .bgprimary {
+		  cursor: default;
+		  color: #fff;
+		  background: rgba(255, 30, 27, 1);
+		  border-radius: 6px;
+		}
+	
+		.jumpinp input {
+		  width: 55px;
+		  height: 26px;
+		  font-size: 13px;
+		  border: 1px solid #ccc;
+		  -webkit-border-radius: 4px;
+		  -moz-border-radius: 4px;
+		  border-radius: 4px;
+		  text-align: center;
+		}
+	
+		.ellipsis {
+		  padding: 0px 8px;
+		  text-align: center;
+		  cursor: pointer;
+		  margin-left: 30px;
+		  width: 40px;
+		  height: 40px;
+		  background: rgba(204, 204, 204, 0);
+		  border-radius: 6px;
+		}
+	
+		.bgprimary {
+		  cursor: default;
+		  color: #fff;
+		  background: rgba(255, 30, 27, 1);
+		  border-radius: 6px;
+		}
+	
+		.pagelist .jump.disabled {
+		  pointer-events: none;
+		  color: rgba(153, 153, 153, 1);
+		}
+	
+		.jumppoint {
+		  margin-left: 30px;
+		}
+	
+		.pagelist .gobtn {
+		  font-size: 18px;
+		}
+	
+		.pageNum {
+		  display: inline-block;
+		  height: 28px;
+		  font-size: 16px;
+		  font-family: PingFangSC-Regular, PingFang SC;
+		  font-weight: 400;
+		  color: rgba(102, 102, 102, 1);
+		  line-height: 28px;
+		}
+	  </style>
+</head>
+<body style="margin: 0px;">
+	
+	<div class="headline">
+		<div class="head"><a href="{{ url_for('frontpage')}}"><span>TED</span></a></div>
+		<div class="slogan">Ideas worth spreading</div>
+		<div class="navigator">
+			<a class="icon1" href="{{ url_for('search')}}"><button class="button"><span>Search</span></button></a>
+        	<a class="icon2" href="{{ url_for('rank')}}"><button class="button"><span>Rank</span></button></a>
+        	<a class="icon3" href="{{ url_for('search')}}"><button class="button"><span>More</span></button></a>
+		</div>
+	</div>
+
+	<div class="next">
+		<img src="{{url_for('static',filename='images/ted.jpg')}}" class="background" width="100%" alt="">
+		<div class="content">
+			{% for Vedio in Vedios %}
+				<div class="col">
+					<div class="vedio">
+						<a href={{Vedio[1]}}>
+						<div class="pic0">
+						<img src={{Vedio[2]}} height="100%">
+						</div>
+						<h4>{{Vedio[0]}}</h4>
+						</a>
+						<div class="postTime">
+							{% if Vedio[11] %}
+							<h5>Post time : {{Vedio[11]}}</h5>
+							{% else %}
+							<p></p>
+							{% endif %}
+						</div>
+						<div class="tooltip">{{Vedio[3]}}</div>
+					</div>
+					
+					<div class="author">
+						<div class="pic">
+							{% if Vedio[8] %}
+							<img src={{Vedio[7]}} width="100%">
+							{% else %}
+							<img src="https://img.ixintu.com/download/jpg/202001/cab6c4f188b20ebfb5d0533b87a5dbaa.jpg!con" width="100%">
+							{% endif %}
+						</div>
+						<div class="info">
+							<p class="para">{{Vedio[6]}}</p>
+							<p class="para">{{Vedio[8]}}</p>
+						</div>
+					</div>
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+
+	<div class="turnNext">
+		
+	</div>
+	
+</body>
+</html>
